@@ -1,0 +1,7 @@
+#include "platform.h"
+#include "osd/osd.h"   // osdConfigMutable(), OSD_DISPLAYPORT_DEVICE_*
+
+void targetConfiguration(void)
+{
+    osdConfigMutable()->displayPortDevice = OSD_DISPLAYPORT_DEVICE_MAX7456;
+}
